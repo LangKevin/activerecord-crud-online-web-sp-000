@@ -1,6 +1,6 @@
 describe 'Movie' do
   let(:attributes) {{
-      id: 1
+      id: 1,
       title: "The Sting",
       release_date: 1973,
       director: "George Roy Hill",
