@@ -82,14 +82,13 @@ def can_be_found_updated_and_saved
   movie = Movie.find_by title: 'Awesome Flick'
   movie.update({title: "Even Awesomer Flick"})
   movie.save
-  binding.pry
 end
 
 def can_update_using_update_method
   # Update movie title to "Wat, huh?"
-  Movie.create(title: "Wat?")
-  __
-  __
+  movie = Movie.create(title: "Wat?")
+  movie.update({title: "Even Awesomer Flick"})
+  movie.save
 end
 
 def can_update_multiple_items_at_once
