@@ -87,7 +87,7 @@ end
 def can_update_using_update_method
   # Update movie title to "Wat, huh?"
   movie = Movie.create(title: "Wat?")
-  movie.update({title: "Even Awesomer Flick"})
+  movie.update({title: "Wat, huh?"})
   movie.save
 end
 
