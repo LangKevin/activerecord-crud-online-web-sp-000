@@ -65,8 +65,8 @@ def can_find_by_multiple_attributes
   # title == "Title"
   # release_date == 2000
   # director == "Me"
-  movie Movie.find_by title: 'Title'
-  movie Movie.find_by release_date: '2000'
+  movie = Movie.find_by title: 'Title'
+  movie = Movie.find_by release_date: '2000'
   movie = Movie.find_by director: 'Me'
 end
 
